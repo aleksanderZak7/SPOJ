@@ -18,7 +18,7 @@ int main()
 {
     int D, a, b;
     std::cin >> D;
-    while (D--) 
+    for(int i = 0; i < D; i++)
     {
         std::cin >> a >> b;
         int last_digit = powerMod(a, b, 10);
