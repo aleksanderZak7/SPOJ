@@ -6,8 +6,8 @@ long long int newtonAlgorithm(int n, int k)
     if (k == 0 || k == n)
         return 1;
     long long int result = 1;
-    int min_k = std::min(k, n - k);
-    for (int i = 0; i < min_k; i++) 
+    int minK = std::min(k, n - k);
+    for (int i = 0; i < minK; i++) 
     {
         result *= (n - i);
         result /= (i + 1);
