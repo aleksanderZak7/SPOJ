@@ -65,7 +65,8 @@ std::string generateWindmill(int& r)
     return Windmill;
 }
 
-int main() {
+int main() 
+{
     int r;
     while (true) 
     {
