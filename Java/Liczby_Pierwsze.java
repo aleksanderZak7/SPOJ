@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
-public class Main {
-    public static boolean isPrime(int number) {
+public class Main 
+{
+    public static boolean isPrime(int number) 
+    {
         if (number <= 1)
             return false;
         for (int i = 2; i <= Math.sqrt(number); ++i)
@@ -10,11 +12,12 @@ public class Main {
         return true;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
-
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) 
+        {
             int number = scanner.nextInt();
             if (isPrime(number))
                 System.out.println("TAK");

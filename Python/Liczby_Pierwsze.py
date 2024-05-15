@@ -1,18 +1,12 @@
-import math
-
 def is_prime(number):
-    if number <= 1:
-        return False
-    for i in range(2, int(math.sqrt(number)) + 1):
+    if number < 2:
+        return 'NIE'
+    for i in range(2, int(number ** 0.5) + 1):
         if number % i == 0:
-            return False
-    return True
+            return 'NIE'
+    return 'TAK'
 
 n = int(input())
-
 for _ in range(n):
     number = int(input())
-    if is_prime(number):
-        print("TAK")
-    else:
-        print("NIE")
+    print(is_prime(number))
