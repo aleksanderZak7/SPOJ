@@ -9,7 +9,5 @@ def last_digit_of_power(base, exponent):
 
 D = int(input())
 for _ in range(D):
-    numbers = input().split()
-    base = int(numbers[0])
-    exponent = int(numbers[1])
+    base, exponent = map(int, input().split())
     print(last_digit_of_power(base, exponent))
