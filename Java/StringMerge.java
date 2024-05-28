@@ -7,17 +7,13 @@ public class Main
         Scanner scanner = new Scanner(System.in);
         int t = scanner.nextInt();
         scanner.nextLine();
-        String[] results = new String[t];
         for (int i = 0; i < t; i++) 
         {
-            String line = scanner.nextLine();
-            String[] parts = line.split(" ");
+            String[] parts = scanner.nextLine().split(" ");
             String s1 = parts[0];
             String s2 = parts[1];
-            results[i] = stringMerge(s1, s2);
+            System.out.println(stringMerge(s1, s2));
         }
-        for (String result : results)
-            System.out.println(result);
         scanner.close();
     }
 
