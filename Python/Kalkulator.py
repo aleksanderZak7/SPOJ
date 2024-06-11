@@ -13,8 +13,7 @@ def perform_operation(operation, a, b):
 while True:
     try:
         symbols = input().split()  
-        operation = symbols[0]
         a, b = map(int, symbols[1:3])
-        print(perform_operation(operation, a, b))
+        print(perform_operation(symbols[0], a, b))
     except:
         break
