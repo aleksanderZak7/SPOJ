@@ -14,16 +14,16 @@ public class Main
 
     public static void main(String[] args) 
     {
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
         for (int i = 0; i < n; i++) 
         {
-            int number = scanner.nextInt();
+            int number = input.nextInt();
             if (isPrime(number))
                 System.out.println("TAK");
             else
                 System.out.println("NIE");
         }
-        scanner.close();
+        input.close();
     }
 }

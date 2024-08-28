@@ -1,15 +1,13 @@
-#include <iostream>
 #include <cmath>
+#include <iostream>
 
 bool is_prime(const int& number) 
 {
     if (number <= 1)
         return false;
     for (int i = 2; i <= sqrt(number); ++i) 
-    {
         if (number % i == 0)
             return false;
-    }
     return true;
 }
 
@@ -18,7 +16,6 @@ int main()
     int n;
     int number;
     std::cin >> n;
-
     while (n--) 
     {
         std::cin >> number;
@@ -27,6 +24,5 @@ int main()
         else
             std::cout << "NIE\n";
     }
-
     return 0;
 }

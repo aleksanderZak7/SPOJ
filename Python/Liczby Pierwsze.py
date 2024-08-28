@@ -8,5 +8,4 @@ def is_prime(number):
 
 n = int(input())
 for _ in range(n):
-    number = int(input())
-    print(is_prime(number))
+    print(is_prime(int(input())))
