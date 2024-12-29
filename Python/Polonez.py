@@ -1,0 +1,7 @@
+input()
+class_3a = input().split()
+class_3b = input().split()
+class_4j = input().split()
+woman = sum(1 for name in class_3a + class_3b + class_4j if name.endswith('a'))
+man = sum(1 for name in class_3a + class_3b + class_4j if not name.endswith('a'))
+print(min(woman, man))
